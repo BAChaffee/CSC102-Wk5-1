@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<!--This is the login html page
+by Brett Chaffee
+BRECHAF@uat.edu
+for CSC102 Spring 2021 Wk 3-1-->
+
+<head>
+    <!--Links login code page to login html page-->
+    <script src="login.js"></script>
+    <!--Links same style sheet used for index html to maintain professional uniformity-->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>
+        <!--Name for login page-->
+        UAT Space Program Login Page
+    </title>
+</head>
+
+<body>
+    <!--Used same image to maintain professional uniformity-->
+    <img src="UATspaceLogo.jpg" <br>
+    <h1>
+        <!--Page title-->
+        Welcome to the UAT Space Program Login Page
+    </h1>
+    <!--Displays status of login, accepted, denied, etc...-->
+    <p id="loginStatus">
+        Login Status...
+    </p>
+    <br>
+    <!--User input form used with the checkCreds function to determine site accessibility -->
+    <form id="creditSubmit" onsubmit="return false">
+        <!--User first name input-->
+        First Name: <input type=="text" id="fName" /><br>
+        <!--User last name input-->
+        Last Name: <input type=="text" id="lName" /><br>
+        <!--User badge number input-->
+        Badge Number: <input type=="number" id="badgeID" /><br>
+        <!--Button to submit user information for verication against data base-->
+        <input class="button" type="submit" onclick="checkCreds();" />
+    </form>
+</body>
+
+</html>
